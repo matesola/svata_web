@@ -32,15 +32,18 @@
     padding: 32px 16px;
     text-align: center;
   }
-  main img { width: min(300px, 64vw); height: auto; display: block; }
-  main p { margin: 0; font-size: clamp(17px, 2.4vw, 22px); font-weight: 500; letter-spacing: 0.01em; }
+  .logo { width: min(300px, 64vw); display: flex; flex-direction: column; gap: 28px; }
+  .logo img { width: 100%; height: auto; display: block; }
+  .logo p { margin: 0; text-align: right; font-size: clamp(17px, 2.4vw, 22px); font-weight: 500; letter-spacing: 0.01em; }
   footer { padding: 20px 16px 28px; text-align: center; font-size: 13px; color: var(--muted); }
 </style>
 </head>
 <body>
 <main>
-  <img src="/svata.png" alt="Sváťa" width="800" height="940">
-  <p>Něco se vaří…</p>
+  <div class="logo">
+    <img src="/svata.png" alt="Sváťa" width="800" height="940">
+    <p>Něco se vaří…</p>
+  </div>
 </main>
 <footer>Matesola 2026</footer>
 </body>
