@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sváťa</title>
+<meta name="description" content="Sváťa, osobní kuchařka pro iPhone. Něco se vaří.">
+<meta name="theme-color" content="#F9F5EA">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  :root { --cream: #F9F5EA; --ink: #161513; --muted: #5A554C; }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; }
+  body {
+    background: var(--cream);
+    color: var(--ink);
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-height: 100dvh;
+  }
+  main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    padding: 32px 16px;
+    text-align: center;
+  }
+  main img { width: min(300px, 64vw); height: auto; display: block; }
+  main p { margin: 0; font-size: clamp(17px, 2.4vw, 22px); font-weight: 500; letter-spacing: 0.01em; }
+  footer { padding: 20px 16px 28px; text-align: center; font-size: 13px; color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <img src="/svata.png" alt="Sváťa" width="800" height="940">
+  <p>Něco se vaří…</p>
+</main>
+<footer>Matesola 2026</footer>
+</body>
+</html>
